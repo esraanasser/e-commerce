@@ -1,0 +1,78 @@
+<nav class="navbar position-fixed top-0 end-0 start-0 z-3 navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="./assets/img/freshcart-logo.svg" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li *ngIf="isLogin" class="nav-item">
+                    <a class="nav-link" routerLink="home" routerLinkActive="Active">Home</a>
+                </li>
+                <li *ngIf="isLogin" class="nav-item">
+                    <a class="nav-link" routerLink="cart" routerLinkActive="Active">Cart</a>
+                </li>
+
+                <li *ngIf="isLogin" class="nav-item">
+                    <a class="nav-link" routerLink="product" routerLinkActive=" Active">Products</a>
+                </li>
+                <li *ngIf="isLogin" class="nav-item">
+                    <a class="nav-link" routerLink="categories" routerLinkActive="Active">Categories</a>
+                </li>
+                <li *ngIf="isLogin" class="nav-item">
+                    <a class="nav-link" routerLink="brands" routerLinkActive="Active">Brands</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+
+                <li *ngIf="isLogin" class="nav-item dropdown" routerLinkActive="Active">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-1x fa-gears"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a routerLink="/forgetpassword" class="dropdown-item">forger password</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <i class="fab mx-2 fa-instagram"></i>
+                    <i class="fab mx-2 fa-facebook"></i>
+                    <i class="fab mx-2 fa-tiktok"></i>
+                    <i class="fab mx-2 fa-twitter"></i>
+                    <i class="fab mx-2 fa-linkedin"></i>
+                    <i class="fab mx-2 fa-youtube"></i>
+                </li>
+                <li *ngIf="!isLogin" class="nav-item">
+                    <a class="nav-link" routerLink="login" routerLinkActive="Active">Login</a>
+                </li>
+                <li *ngIf="!isLogin" class="nav-item">
+                    <a class="nav-link" routerLink="register" routerLinkActive="Active">Register</a>
+                </li>
+                <li *ngIf="isLogin" class="nav-item">
+                    <span (click)="logOut()" class="cursor-pointer nav-link">Logout</span>
+                </li>
+                <li *ngIf="isLogin" class="nav-item position-relative">
+                    <a class="nav-link" routerLink="cart" routerLinkActive="">
+                        <i class="fa fa-2x fa-shopping-cart text-main"></i>
+                        <div class="badge bg-main position-absolute top-0 end-0">{{numOfCartItems}}</div>
+                    </a>
+                </li>
+
+                <li *ngIf="isLogin" class="nav-item position-relative">
+                    <a class="nav-link" routerLink="wishlist">
+                        <i class="fa-solid fa-1x text-danger fa-heart heart "></i>
+
+                    </a>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>

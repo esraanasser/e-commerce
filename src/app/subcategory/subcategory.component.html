@@ -1,0 +1,10 @@
+<div class="w-50 mx-auto text-center">
+    <h4 class="Active p-4">{{CategoriesDetails.name}} subcategories</h4>
+</div>
+<div class="row py-5 text-center gy-4">
+    <div class="col-md-3" *ngFor="let details of SubCategoriesOnCategory">
+        <div class="card brand-shadow p-3">
+            <h4> {{details.name}}</h4>
+        </div>
+    </div>
+</div>

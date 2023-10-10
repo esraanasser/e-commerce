@@ -1,0 +1,12 @@
+<app-categoryslider></app-categoryslider>
+
+<div class="row text-center gy-5 my-3">
+    <div class="col-md-4" *ngFor="let category of categories">
+        <div [routerLink]="['/subcategories', category._id]" role="button" class="card brand-shadow overflow-hidden">
+            <img [src]="category.image" height="350" [alt]="category.name">
+            <div class="card-body">
+                <h3 class="text-main fw-bold card-text">{{category.name}}</h3>
+            </div>
+        </div>
+    </div>
+</div>

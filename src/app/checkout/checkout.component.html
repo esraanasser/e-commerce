@@ -1,0 +1,13 @@
+<div class="w-75 mx-auto">
+    <form [formGroup]="shippingAddress" (ngSubmit)="handleOnline()">
+        <label for="details">Details</label>
+        <input type="text" id="details" class=" form-control mb-3" formControlName="details">
+        <label for="phone">phone</label>
+        <input type="tel" id="phone" class=" form-control mb-3" formControlName="phone">
+        <label for="city">city</label>
+        <input type="text" id="city" class=" form-control mb-3" formControlName="city">
+
+
+        <button class="btn btn-outline-info w-100">pay</button>
+    </form>
+</div>

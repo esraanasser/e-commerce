@@ -25,6 +25,13 @@
         <div *ngIf="registerForm.get('password')?.errors && registerForm.get('password')?.touched"
             class="alert alert-danger">
             <p *ngIf="registerForm.get('password')?.getError('pattern')" class="m-0">Invalied password </p>
+           <ul *ngIf="registerForm.get('password')?.getError('pattern')">
+                <li>password should statr with capital letter</li>
+                <li>password should contains lowercase letters & numbers</li>
+                <li>password should not contains any special characters</li>
+                <li>password minLength 5 characters</li>
+                <li>password maxlength 10 characters</li>
+            </ul>
             <p *ngIf="registerForm.get('password')?.getError('required')" class="m-0">password is required</p>
         </div>
 

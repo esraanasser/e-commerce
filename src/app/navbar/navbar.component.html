@@ -38,6 +38,12 @@
 
                     </ul>
                 </li>
+               <li *ngIf="isLogin" class="nav-item position-relative">
+                    <a class="nav-link" routerLink="wishlist">
+                        <i class="fa-solid fa-1x text-danger fa-heart  "></i>
+
+                    </a>
+                </li>
                 <li class="nav-item d-flex align-items-center">
                     <i class="fab mx-2 fa-instagram"></i>
                     <i class="fab mx-2 fa-facebook"></i>
@@ -62,12 +68,7 @@
                     </a>
                 </li>
 
-                <li *ngIf="isLogin" class="nav-item position-relative">
-                    <a class="nav-link" routerLink="wishlist">
-                        <i class="fa-solid fa-1x text-danger fa-heart heart "></i>
-
-                    </a>
-                </li>
+               
 
 
 

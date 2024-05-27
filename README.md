@@ -30,13 +30,13 @@ To set up the project locally, follow these steps:
    ```
   
 3. Install dependencies:
-  
+  ```bash
    npm install
-   
+   ```
 4. Run the application:
-  
+  ```bash
    ng serve
-   
+   ```
    Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Usage
@@ -59,17 +59,17 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 1. Fork the repository
 2. Create your feature branch:
-  
+  ```bash
    git checkout -b feature/YourFeature
-   
+   ```
 3. Commit your changes:
-  
+ ```bash 
    git commit -m 'Add some feature'
-   
+ ```  
 4. Push to the branch:
-  
+  ```bash
    git push origin feature/YourFeature
-   
+   ```
 5. Open a pull request
 
 # sign up

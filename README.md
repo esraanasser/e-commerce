@@ -71,7 +71,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
    git push origin feature/YourFeature
    ```
 5. Open a pull request
-   #tips to regester
+ # tips to regester
 # sign up
 # name
 Name minLength is 3,

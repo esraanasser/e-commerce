@@ -1,15 +1,15 @@
 # E-Commerce Website
 
 ## Description
-An e-commerce website that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. This platform provides functionalities such as:
+An e-commerce website that allows people to buy physical goods over the internet rather than at a brick-and-mortar location. This platform provides functionalities such as:
 - Processing orders
-- Accepting payments
+- Accepting online payments
 - Adding/removing items to/from the cart
 - Adding/removing items to/from the wishlist
 - Moving items from the wishlist to the cart
 - Viewing product details and categories
 - User authentication (sign up, sign in, change password, forgot password)
-- Product search
+- Product search 
 - User logout
 
 ## Demo
@@ -71,7 +71,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
    git push origin feature/YourFeature
    ```
 5. Open a pull request
-
+   #tips to regester
 # sign up
 # name
 Name minLength is 3,

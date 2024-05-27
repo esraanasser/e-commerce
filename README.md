@@ -24,15 +24,16 @@ Check out the live demo: [E-Commerce Website](https://esraanasser.github.io/e-co
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
-  
-   git clone https://github.com/yourusername/e-commerce.git
+   bash
+     git clone https://github.com/yourusername/e-commerce.git
    cd e-commerce
    
-2. Install dependencies:
+  
+3. Install dependencies:
   
    npm install
    
-3. Run the application:
+4. Run the application:
   
    ng serve
    

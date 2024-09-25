@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+     "clean": "if exist node_modules rmdir /s /q node_modules && if exist dist rmdir /s /q dist"
   },
   "private": true,
   "dependencies": {
